@@ -7,6 +7,7 @@ import org.apache.camel.Converter;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
+
 @Converter
 public class InputStreamFromDogConverter {
     @Converter

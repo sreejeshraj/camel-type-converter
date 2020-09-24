@@ -25,7 +25,7 @@ public class TypeConverterDemoRoute extends RouteBuilder {
 
 
 		from("timer://myTimer?period=10s&repeatCount=1")
-		.routeId("InputFolderToTestSedaRoute")
+		.routeId("TypeConverterRoute")
 		.setBody(()-> new Cat("Tom","black",3))
 		.log("Body:${body}")
 //		.convertBodyTo(String.class)
